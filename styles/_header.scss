@@ -1,0 +1,16 @@
+@use "./utils/variables" as*;
+
+.header {
+    height: 10vh;
+    position: relative;
+}
+
+.header-container {
+    @include container;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    gap: 1rem;
+}

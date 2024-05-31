@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Cheeseburger",
+    "description": "A delicious cheeseburger with a juicy beef patty, cheese, lettuce, tomato, and special sauce.",
+    "price": 5.99,
+    "imageUrl": "https://images.unsplash.com/photo-1601050690212-16eec87b3297"
+  },
+  {
+    "id": 2,
+    "name": "Pepperoni Pizza",
+    "description": "A classic pepperoni pizza with a crispy crust, tangy tomato sauce, and melted mozzarella cheese.",
+    "price": 8.99,
+    "imageUrl": "https://images.unsplash.com/photo-1564936283091-4b39103f6c34"
+  },
+  {
+    "id": 3,
+    "name": "Chicken Nuggets",
+    "description": "Crispy and golden chicken nuggets served with your choice of dipping sauce.",
+    "price": 4.99,
+    "imageUrl": "https://images.unsplash.com/photo-1578926287644-6b4dbb040b3a"
+  },
+  {
+    "id": 4,
+    "name": "French Fries",
+    "description": "Classic french fries, crispy on the outside and soft on the inside, seasoned to perfection.",
+    "price": 2.99,
+    "imageUrl": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90"
+  },
+  {
+    "id": 5,
+    "name": "Caesar Salad",
+    "description": "Fresh romaine lettuce, croutons, and Parmesan cheese tossed in a creamy Caesar dressing.",
+    "price": 6.49,
+    "imageUrl": "https://images.unsplash.com/photo-1592200276143-1a6a3d1ff9a6"
+  },
+  {
+    "id": 6,
+    "name": "BBQ Chicken Sandwich",
+    "description": "Grilled chicken breast with BBQ sauce, lettuce, tomato, and onions on a toasted bun.",
+    "price": 7.49,
+    "imageUrl": "https://images.unsplash.com/photo-1567016561402-230519c51159"
+  },
+  {
+    "id": 7,
+    "name": "Veggie Burger",
+    "description": "A hearty veggie burger made with black beans, corn, and spices, topped with lettuce and tomato.",
+    "price": 6.99,
+    "imageUrl": "https://images.unsplash.com/photo-1565365487413-56df2ff3ab93"
+  },
+  {
+    "id": 8,
+    "name": "Hot Dog",
+    "description": "A classic hot dog with your choice of toppings: ketchup, mustard, onions, and relish.",
+    "price": 3.99,
+    "imageUrl": "https://images.unsplash.com/photo-1562967916-eb82221dfb7c"
+  },
+  {
+    "id": 9,
+    "name": "Chocolate Milkshake",
+    "description": "A rich and creamy chocolate milkshake made with real ice cream and topped with whipped cream.",
+    "price": 4.49,
+    "imageUrl": "https://images.unsplash.com/photo-1571072414654-971d083a7ffb"
+  },
+  {
+    "id": 10,
+    "name": "Fish Tacos",
+    "description": "Soft tortillas filled with crispy fish, cabbage slaw, and a tangy lime sauce.",
+    "price": 7.99,
+    "imageUrl": "https://images.unsplash.com/photo-1565299634946-b28f40a0ae38"
+  }
+]

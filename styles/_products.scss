@@ -1,0 +1,77 @@
+@use "./utils/variables" as*;
+
+.products-header {
+    margin-top: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.products {
+    margin-top: 3rem;
+    text-align: center;
+
+
+    @media screen and (min-width:$computer) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+    }
+
+}
+
+.products-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: wrap;
+    margin-top: 2rem;
+    width: 100%;
+    gap: 3rem;
+
+
+    @media screen and (min-width:$laptop) {
+        justify-content: space-between;
+        width: 60%;
+        margin-top: 0;
+    }
+}
+
+.product-card {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: start;
+    font-size: small;
+    max-width: 200px;
+    height: 300px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+
+    }
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 10px
+}
+
+.product-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: $black;
+    background-color: $mainColor;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    }
+}

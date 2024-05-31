@@ -1,0 +1,13 @@
+@use "./utils/variables" as*;
+
+.footer {
+    min-height: 100px;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 5rem;
+    background-color: $secColor ;
+    overflow: hidden;
+}

@@ -1,0 +1,181 @@
+@use "./utils/variables" as*;
+
+.cart {
+    @include flexStartColumn;
+    background-color: $white;
+    height: 90%;
+    width: 100vw;
+    max-width: 100vw;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    border-radius: 30px;
+    color: $black;
+    padding-bottom: 1rem;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px -7px 29px 0px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: -99;
+
+    @media screen and (min-width:$computer) {
+        opacity: 1;
+        position: static;
+        transform: translate(0, 0);
+        width: 30%;
+        height: 500px;
+        z-index: 999;
+        padding-bottom: 0;
+    }
+}
+
+.open-cart {
+    opacity: 1;
+    transition: all .3s ease-in-out;
+    z-index: 999;
+
+}
+
+.scrolled-to-top {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+
+.open-cart-btn {
+    background-color: $white;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    max-width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+    color: $black;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.9) 0px 7px 29px 0px;
+    cursor: pointer;
+
+    @media screen and (min-width:$computer) {
+        display: none;
+    }
+
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include container;
+}
+
+.close-cart-btn {
+    width: 40px;
+    height: 40px;
+    display: inline;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    .icon {
+        width: 100%;
+        height: 100%;
+        color: black;
+    }
+
+    @media screen and (min-width:$computer) {
+        display: none;
+    }
+}
+
+.cart-products-wrapper {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    @include container;
+    overflow: scroll;
+    height: 250px;
+    color: $gray;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.product-card-cart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: start;
+    gap: 1rem;
+
+}
+
+.product-cart-header {
+    display: flex;
+    gap: 1rem;
+}
+
+.product-description {
+    font-size: xx-small;
+    width: 60%;
+}
+
+.product-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.change-quantity-btn {
+    background-color: rgb(169, 169, 169);
+    color: $secColor;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.change-quantity-btn:hover {
+    background-color: darkgray;
+}
+
+.total-price {
+    -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.05);
+    -moz-box-shadow: 0px -4px 3px rgba(14, 3, 3, 0.05);
+    box-shadow: 0px -4px 4px rgba(50, 50, 50, 0.05);
+    width: 100%;
+    height: 30px;
+    padding-top: 1rem;
+}
+
+
+.check-out-btn {
+    height: 40px;
+    border-radius: 10px;
+    margin: 1rem 0rem;
+    border: none;
+    text-transform: uppercase;
+    width: 70%;
+    max-width: 200px;
+    background-color: $mainColor;
+    color: black;
+
+    &:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+    }
+}

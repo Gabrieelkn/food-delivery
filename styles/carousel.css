@@ -1,0 +1,41 @@
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  min-height: 50vh;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+}
+
+.embla__bullets {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.embla__bullet {
+  background: none;
+  border: 2px solid #716e6e;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 16px;
+  margin: 0 5px;
+  padding: 0;
+  width: 16px;
+}
+
+.embla__bullet.is-selected {
+  background-color: #716e6e;
+}

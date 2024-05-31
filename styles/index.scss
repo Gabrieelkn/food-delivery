@@ -1,0 +1,12 @@
+@use "./utils/variables" as*;
+
+@import "./searchBar";
+@import "./header";
+@import "./navbar";
+@import "./cartBar";
+@import "./products";
+@import "./footer";
+
+.home-page {
+    @include container;
+}
