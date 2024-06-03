@@ -1,5 +1,5 @@
 import { Carousel } from "@/components/carousel";
-import FastFoodMenu from "@/components/products";
+import FastFoodMenu from "@/components/menu";
 import "../styles/index.css";
 
 export default function Home() {
