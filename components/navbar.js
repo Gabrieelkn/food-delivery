@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
-import "../styles/index.css";
 import { RiMenu5Fill } from "react-icons/ri";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import useOutsideClick from "@/hooks/useClickOutside";
 
 function NavigationBar() {
   const [visible, setVisible] = useState(false);
@@ -19,23 +19,11 @@ function NavigationBar() {
     window.scrollTo(0, 0);
   }, [path, setVisible]);
 
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (
-        navRef.current &&
-        !navRef.current.contains(event.target) &&
-        !hamburgerRef.current.contains(event.target)
-      ) {
-        setVisible(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleOutsideClick);
-
-    return () => {
-      document.removeEventListener("mousedown", handleOutsideClick);
-    };
-  }, []);
+  useOutsideClick(navRef, (event) => {
+    if (!hamburgerRef.current.contains(event.target)) {
+      setVisible(false);
+    }
+  });
 
   return (
     <>
