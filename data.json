@@ -2,71 +2,181 @@
   {
     "id": 1,
     "name": "Cheeseburger",
-    "description": "A delicious cheeseburger with a juicy beef patty, cheese, lettuce, tomato, and special sauce.",
-    "price": 5.99,
-    "imageUrl": "https://images.unsplash.com/photo-1601050690212-16eec87b3297"
+    "ingredients": "Total: 250g. Juicy beef patty (100g), cheese (30g), lettuce (20g), tomato (20g), special sauce (30g), bun (50g).",
+    "price": 9.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "burgers"
   },
   {
     "id": 2,
     "name": "Pepperoni Pizza",
-    "description": "A classic pepperoni pizza with a crispy crust, tangy tomato sauce, and melted mozzarella cheese.",
-    "price": 8.99,
-    "imageUrl": "https://images.unsplash.com/photo-1564936283091-4b39103f6c34"
+    "ingredients": "Total: 300g. Crispy crust (100g), tangy tomato sauce (50g), melted mozzarella cheese (100g), pepperoni (50g).",
+    "price": 9.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "pizza"
   },
   {
     "id": 3,
     "name": "Chicken Nuggets",
-    "description": "Crispy and golden chicken nuggets served with your choice of dipping sauce.",
-    "price": 4.99,
-    "imageUrl": "https://images.unsplash.com/photo-1578926287644-6b4dbb040b3a"
+    "ingredients": "Total: 150g. Chicken (120g), batter (30g).",
+    "price": 5.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1562967914-608f82629710?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "appetizers"
   },
   {
     "id": 4,
     "name": "French Fries",
-    "description": "Classic french fries, crispy on the outside and soft on the inside, seasoned to perfection.",
-    "price": 2.99,
-    "imageUrl": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90"
+    "ingredients": "Total: 200g. Potatoes (180g), seasoning (20g).",
+    "price": 3.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "sides"
   },
   {
     "id": 5,
     "name": "Caesar Salad",
-    "description": "Fresh romaine lettuce, croutons, and Parmesan cheese tossed in a creamy Caesar dressing.",
-    "price": 6.49,
-    "imageUrl": "https://images.unsplash.com/photo-1592200276143-1a6a3d1ff9a6"
+    "ingredients": "Total: 200g. Fresh romaine lettuce (150g), croutons (30g), Parmesan cheese (10g), creamy Caesar dressing (10g).",
+    "price": 6.5,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1551248429-40975aa4de74?q=80&w=1890&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "salads"
   },
   {
     "id": 6,
     "name": "BBQ Chicken Sandwich",
-    "description": "Grilled chicken breast with BBQ sauce, lettuce, tomato, and onions on a toasted bun.",
-    "price": 7.49,
-    "imageUrl": "https://images.unsplash.com/photo-1567016561402-230519c51159"
+    "ingredients": "Total: 250g. Grilled chicken breast (100g), BBQ sauce (30g), lettuce (20g), tomato (20g), onions (20g), toasted bun (60g).",
+    "price": 7.5,
+    "quantity": 1,
+    "imageUrl": "https://plus.unsplash.com/premium_photo-1664472757995-3260cd26e477?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "sandwiches"
   },
   {
     "id": 7,
     "name": "Veggie Burger",
-    "description": "A hearty veggie burger made with black beans, corn, and spices, topped with lettuce and tomato.",
-    "price": 6.99,
-    "imageUrl": "https://images.unsplash.com/photo-1565365487413-56df2ff3ab93"
+    "ingredients": "Total: 230g. Black beans (80g), corn (30g), spices (20g), lettuce (20g), tomato (20g), bun (60g).",
+    "price": 7.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1520072959219-c595dc870360?q=80&w=1890&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "burgers"
   },
   {
     "id": 8,
     "name": "Hot Dog",
-    "description": "A classic hot dog with your choice of toppings: ketchup, mustard, onions, and relish.",
-    "price": 3.99,
-    "imageUrl": "https://images.unsplash.com/photo-1562967916-eb82221dfb7c"
+    "ingredients": "Total: 150g. Hot dog sausage (70g), bun (50g), toppings (ketchup, mustard, onions, relish) (30g).",
+    "price": 4.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1613482084286-41f25b486fa2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "sandwiches"
   },
   {
     "id": 9,
     "name": "Chocolate Milkshake",
-    "description": "A rich and creamy chocolate milkshake made with real ice cream and topped with whipped cream.",
-    "price": 4.49,
-    "imageUrl": "https://images.unsplash.com/photo-1571072414654-971d083a7ffb"
+    "ingredients": "Total: 300g. Ice cream (200g), milk (80g), whipped cream (20g).",
+    "price": 4.5,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "drinks"
   },
   {
     "id": 10,
     "name": "Fish Tacos",
-    "description": "Soft tortillas filled with crispy fish, cabbage slaw, and a tangy lime sauce.",
-    "price": 7.99,
-    "imageUrl": "https://images.unsplash.com/photo-1565299634946-b28f40a0ae38"
+    "ingredients": "Total: 200g. Crispy fish (100g), cabbage slaw (50g), tangy lime sauce (30g), tortillas (20g).",
+    "price": 8.0,
+    "quantity": 1,
+    "imageUrl": "https://plus.unsplash.com/premium_photo-1681406995032-c3ceeb24d7f9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "mexican"
+  },
+  {
+    "id": 11,
+    "name": "Spaghetti Bolognese",
+    "ingredients": "Total: 350g. Spaghetti (150g), Bolognese sauce (180g), Parmesan cheese (20g).",
+    "price": 12.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1600803734709-83f30a78e312?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "italian"
+  },
+  {
+    "id": 12,
+    "name": "Grilled Cheese Sandwich",
+    "ingredients": "Total: 200g. Cheddar cheese (80g), toasted bread (120g).",
+    "price": 4.5,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1528736235302-52922df5c122?q=80&w=1908&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "sandwiches"
+  },
+  {
+    "id": 13,
+    "name": "Tuna Salad",
+    "ingredients": "Total: 200g. Mixed greens (120g), tuna (60g), cherry tomatoes (10g), red onions (5g), lemon vinaigrette (5g).",
+    "price": 7.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1622756144420-6877b1b7476e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "salads"
+  },
+  {
+    "id": 14,
+    "name": "Margarita Pizza",
+    "ingredients": "Total: 300g. Fresh mozzarella (100g), tomatoes (100g), basil (10g), pizza dough (90g).",
+    "price": 10.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "pizza"
+  },
+  {
+    "id": 15,
+    "name": "Pancakes",
+    "ingredients": "Total: 250g. Pancakes (200g), butter (10g), maple syrup (30g), fresh berries (10g).",
+    "price": 6.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "breakfast"
+  },
+  {
+    "id": 16,
+    "name": "Sushi Platter",
+    "ingredients": "Total: 400g. Assorted nigiri (100g), sashimi (150g), rolls (150g).",
+    "price": 18.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1676037150408-4b59a542fa7c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "japanese"
+  },
+  {
+    "id": 17,
+    "name": "Chocolate Cake",
+    "ingredients": "Total: 150g. Chocolate cake (100g), chocolate ganache (30g), fresh strawberries (20g).",
+    "price": 5.5,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?q=80&w=1902&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "desserts"
+  },
+  {
+    "id": 18,
+    "name": "Taco Salad",
+    "ingredients": "Total: 250g. Seasoned beef (100g), lettuce (80g), tomatoes (30g), cheese (20g), spicy dressing (20g).",
+    "price": 8.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "mexican"
+  },
+  {
+    "id": 19,
+    "name": "Beef Burrito",
+    "ingredients": "Total: 300g. Seasoned beef (100g), rice (80g), beans (80g), cheese (40g).",
+    "price": 9.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1600315958029-b922dee42ac2?q=80&w=1864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "mexican"
+  },
+  {
+    "id": 20,
+    "name": "Strawberry Smoothie",
+    "ingredients": "Total: 250g. Fresh strawberries (150g), yogurt (70g), honey (30g).",
+    "price": 5.0,
+    "quantity": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1589734575451-8ddc34c5752b?q=80&w=1794&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "drinks"
   }
 ]
