@@ -3,14 +3,15 @@
 .header {
     height: 10vh;
     position: relative;
+    z-index: 100;
 }
 
 .header-container {
     @include container;
+    margin: 0 auto;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 999;
     gap: 1rem;
 }

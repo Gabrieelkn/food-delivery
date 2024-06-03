@@ -4,8 +4,11 @@
 @import "./header";
 @import "./navbar";
 @import "./cartBar";
-@import "./products";
+@import "./menu";
+@import "./productCard";
 @import "./footer";
+@import "./filter";
+
 
 .home-page {
     @include container;

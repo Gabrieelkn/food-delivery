@@ -1,0 +1,38 @@
+@use "./utils/variables" as*;
+
+.products-header {
+    margin-top: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.products {
+    margin-top: 3rem;
+    text-align: center;
+
+
+    @media screen and (min-width:$computer) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+    }
+
+}
+
+.products-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: wrap;
+    margin-top: 2rem;
+    width: 100%;
+    gap: 3rem;
+
+
+    @media screen and (min-width:$laptop) {
+        justify-content: space-between;
+        width: 60%;
+        margin-top: 0;
+    }
+}

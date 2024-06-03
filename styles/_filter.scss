@@ -1,0 +1,29 @@
+@use "./utils/variables" as*;
+
+.category-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: 2rem 0;
+}
+
+.category {
+    border-radius: 10px;
+    border: none;
+    padding: .5rem;
+    text-transform: uppercase;
+    color: $black;
+    transition: all .3s ease-in-out;
+    background-color: $mainColor;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all .3s ease-in-out;
+    }
+}
+
+.active-category {
+    background-color: $secColor;
+}
