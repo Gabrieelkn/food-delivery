@@ -7,7 +7,7 @@ import Slider1 from "../public/banner3.webp";
 import Slider2 from "../public/banner4.webp";
 import Image from "next/image";
 import "../styles/carousel.css";
-import { useState, useCallback, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export function Carousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
@@ -57,8 +57,8 @@ function SliderImage({ src }) {
       <Image
         className="slider-image"
         src={src}
-        width={400}
-        height={200}
+        width={2000}
+        height={1000}
         alt="image"
       />
     </div>
