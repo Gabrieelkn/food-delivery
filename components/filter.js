@@ -2,6 +2,8 @@
 import { useState } from "react";
 import products from "../data.json";
 import Products from "./products";
+import Image from "next/image";
+import Burger from "../public/burger.png";
 
 export default function Filter() {
   const [activeCategories, setActiveCategories] = useState([]);
@@ -26,6 +28,10 @@ export default function Filter() {
 
   return (
     <>
+      <div className="image-text-wrapper">
+        <Image src={Burger} height={40} width={40} alt="icon" />
+        <h2>{filteredProducts.length} products available</h2>
+      </div>
       <div className="category-wrapper">
         {uniqueCategories.map((category) => (
           <button
@@ -39,7 +45,6 @@ export default function Filter() {
           </button>
         ))}
       </div>
-      <h2>{filteredProducts.length} products available</h2>
       <Products filteredProducts={filteredProducts} />
     </>
   );
