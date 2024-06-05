@@ -3,7 +3,7 @@
 }
 .embla__container {
   display: flex;
-  min-height: 50vh;
+  min-height: 40vh;
 }
 .embla__slide {
   flex: 0 0 100%;
@@ -16,7 +16,16 @@
 .slider-image {
   width: 100%;
   height: auto;
-  max-height: 70vh;
+  max-height: 40vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .embla__container {
+    min-height: 80vh;
+  }
+  .slider-image {
+    max-height: 80vh;
+  }
 }
 
 .embla__bullets {
