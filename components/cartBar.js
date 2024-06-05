@@ -9,6 +9,10 @@ export default function Cart() {
   const [scrolledToTop, setScrolledToTop] = useState(false);
   const { cart, addToCart, removeFromCart } = useContext(CartContext);
   const cartRef = useRef();
+  const subtotal = cart.reduce(
+    (sum, product) => sum + product.quantity * product.price,
+    0
+  );
 
   const totalQuantity = cart.reduce(
     (sum, product) => sum + product.quantity,
@@ -89,7 +93,7 @@ export default function Cart() {
                 />
               ))}
             </div>
-            <TotalPrice cart={cart} />
+            <TotalPrice subtotal={subtotal} />
           </>
         ) : (
           <div className="cart-products-wrapper">
@@ -104,17 +108,12 @@ export default function Cart() {
   );
 }
 
-function TotalPrice({ cart }) {
+function TotalPrice({ subtotal }) {
   return (
     <div className="total-price">
-      <h2>
-        TOTAL:{" "}
-        {cart.reduce(
-          (sum, product) => sum + product.quantity * product.price,
-          0
-        )}
-        $
-      </h2>
+      <h2>SUBTOTAL: {subtotal} $</h2>
+      <h2>DELIVERY: 5 $</h2>
+      <h2>TOTAL: {subtotal + 5} $</h2>
       <button className="check-out-btn">Check out</button>
     </div>
   );
@@ -135,7 +134,7 @@ function ProductCardCart({ removeFromCart, product, addToCart, id }) {
         >
           <TiMinus />
         </button>
-        <p className="product-description">{product.description}</p>
+        <p className="product-description">{product.ingredients}</p>
         <button
           className="change-quantity-btn"
           onClick={() => addToCart(product)}
