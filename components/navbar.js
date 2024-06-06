@@ -41,7 +41,7 @@ function NavigationBar() {
             <Link href="/menu">Menu</Link>
           </li>
           <li>
-            <Link href="/menu/offers">Offers</Link>
+            <Link href="/offers">Offers</Link>
           </li>
           <li>
             <Link href="/about">About us</Link>
