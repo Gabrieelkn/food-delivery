@@ -4,15 +4,19 @@ import CartContext from "@/context/CartContext";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { TiMinus, TiPlus } from "react-icons/ti";
 import { GoSmiley } from "react-icons/go";
+import Link from "next/link";
 
 export default function Cart() {
   const [scrolledToTop, setScrolledToTop] = useState(false);
   const { cart, addToCart, removeFromCart } = useContext(CartContext);
   const cartRef = useRef();
-  const subtotal = cart.reduce(
-    (sum, product) => sum + product.quantity * product.price,
-    0
-  );
+  const subtotal = cart.reduce((sum, product) => {
+    const price =
+      product.offer && product.offer !== "1+1"
+        ? (product.price * (100 - product.offer)) / 100
+        : product.price;
+    return sum + product.quantity * price;
+  }, 0);
 
   const totalQuantity = cart.reduce(
     (sum, product) => sum + product.quantity,
@@ -114,7 +118,9 @@ function TotalPrice({ subtotal }) {
       <h2>SUBTOTAL: {subtotal} $</h2>
       <h2>DELIVERY: 5 $</h2>
       <h2>TOTAL: {subtotal + 5} $</h2>
-      <button className="check-out-btn">Check out</button>
+      <Link href="/checkout">
+        <button className="check-out-btn">Order now</button>
+      </Link>
     </div>
   );
 }
@@ -125,7 +131,13 @@ function ProductCardCart({ removeFromCart, product, addToCart, id }) {
       <div className="product-cart-header">
         <h3 className="product-cart-quantity">x{product.quantity}</h3>
         <p>{product.name} </p>
-        <p>{product.price * product.quantity} $</p>
+        {product.offer && product.offer !== "1+1" ? (
+          <b className="discounted-price">
+            {((product.price * (100 - product.offer)) / 100).toFixed(2)} $
+          </b>
+        ) : (
+          <p>{product.price * product.quantity} $</p>
+        )}
       </div>
       <div className="product-buttons">
         <button
