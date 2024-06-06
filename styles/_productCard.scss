@@ -49,3 +49,27 @@
     display: block;
     font-size: x-small;
 }
+
+.discount-span {
+    background-color: rgb(255, 136, 0);
+    color: $black;
+    padding: .1rem;
+    display: block;
+    width: max-content;
+    margin: .2rem 0;
+    border-radius: 5px;
+}
+
+.one-free {
+    color: green;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+.discounted-price {
+    color: green;
+    margin-left: 1rem;
+}
