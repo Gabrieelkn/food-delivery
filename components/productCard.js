@@ -15,10 +15,25 @@ export default function ProductCard({ item, id }) {
         height={100}
       />
       <h4>
-        {item.name} <span className="category-name">{item.category}</span>
+        {item.name}{" "}
+        {item.offer && item.offer !== "1+1" && (
+          <span className="discount-span"> -{item.offer}%</span>
+        )}{" "}
+        <span className="category-name">{item.category}</span>
       </h4>
       <p className="ingredients">{item.ingredients}</p>
-      <b>${item.price.toFixed(2)}</b>
+      {item.offer === "1+1" && <p className="one-free">1+1 free</p>}
+      {item.offer && item.offer !== "1+1" ? (
+        <div className="price-wrapper">
+          <b className="old-price">{item.price.toFixed(2)} $</b>
+          <b className="discounted-price">
+            {((item.price * (100 - item.offer)) / 100).toFixed(2)} $
+          </b>
+        </div>
+      ) : (
+        <b>{item.price.toFixed(2)} $</b>
+      )}
+
       <button className="product-button" onClick={() => addToCart(item)}>
         Add to Cart
       </button>
