@@ -477,6 +477,31 @@
   font-size: x-small;
 }
 
+.discount-span {
+  background-color: rgb(255, 136, 0);
+  color: #161818;
+  padding: 0.1rem;
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.2rem 0;
+  border-radius: 5px;
+}
+
+.one-free {
+  color: green;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: red;
+}
+
+.discounted-price {
+  color: green;
+  margin-left: 1rem;
+}
+
 /* Color */
 /* Font */
 /* Breakpoints */
@@ -535,7 +560,15 @@
   background-color: #49D100;
 }
 
-.home-page {
+.home-page,
+.offers {
+  width: 95%;
+  max-width: 1250px;
+  margin: 20px auto;
+}
+
+.offers-header {
+  text-align: start;
   width: 95%;
   max-width: 1250px;
   margin: 20px auto;

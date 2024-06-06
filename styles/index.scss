@@ -10,6 +10,13 @@
 @import "./filter";
 
 
-.home-page {
+.home-page,
+.offers {
+    @include container;
+
+}
+
+.offers-header {
+    text-align: start;
     @include container;
 }
